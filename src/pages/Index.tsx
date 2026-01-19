@@ -1,18 +1,20 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import StatsMarquee from "@/components/StatsMarquee";
+import AlertBanner from "@/components/AlertBanner";
 import FeaturesSection from "@/components/FeaturesSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background scanlines">
       <Header />
-      <main>
-        <HeroSection />
-        <FeaturesSection />
-      </main>
+      <HeroSection />
+      <StatsMarquee />
+      <AlertBanner />
+      <FeaturesSection />
       <Footer />
-    </div>
+    </main>
   );
 };
 
